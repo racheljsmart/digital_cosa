@@ -3,7 +3,7 @@ Transformation format for openrefine to XML mods
 
 
 
-##Openrefine MODS transformation workflow##
+## Openrefine MODS transformation workflow
 
 Tools Required
 - download Openrefine http://openrefine.org/download.html
@@ -19,7 +19,7 @@ SU sheets
 
 
 
-###General###
+### General
 
 Remove quotes from Templating
 -add .replace('"', '') to the value inputs in the XML
@@ -27,7 +27,7 @@ ex, {{jsonize(cells["SU Number"].value).replace('"', '')}}
 
 
 
-###Artifacts###
+### Artifacts
 
 Merge 'Dimensions L x W x D' columns
 1. 'Dimensions...' -> Edit cells -> Transform...
@@ -54,7 +54,7 @@ Expression: "2014" or whatever the year is
 
 Remember to change the <recordCreationDate> value in the template to today's date.
 
-###SU Sheets###
+### SU Sheets
 
 Generating purls using Cataloged Objects column
 1. Click on Cataloged Objects Column
