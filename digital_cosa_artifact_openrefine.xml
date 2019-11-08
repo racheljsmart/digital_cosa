@@ -1,0 +1,66 @@
+
+<!-- Prefix -->
+
+<?xml version="1.0"?>
+<mods xmlns="http://www.loc.gov/mods/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:etd="http://www.ndltd.org/standards/metadata/etdms/1.0/" xmlns:flvc="info:flvc/manifest/v1" xsi:schemaLocation="http://www.loc.gov/standards/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-4.xsd" version="3.4">
+
+<!-- Row Template -->
+
+  <titleInfo lang="eng">
+    <title>{{jsonize(cells["Object"].value).replace('"', '')}}</title>
+  </titleInfo>
+  <name type="personal" authority="local">
+    <namePart>Cosa Excavations</namePart>
+    <role>
+      <roleTerm authority="rda" type="text">originator</roleTerm>
+      <roleTerm authority="marcrelator" type="code">org</roleTerm>
+    </role>
+  </name>
+  <originInfo>
+    <place>
+      <placeTerm authority="iso3166" type="code">ita</placeTerm>
+      <placeTerm type="text">Italy</placeTerm>
+    </place>
+    <dateIssued>Roman Republic, 200 BCE</dateIssued>
+    <dateOther>{{jsonize(cells["Date"].value).replace('"', '')}}</dateOther>
+  </originInfo>
+  <note displayLabel="Dig season">{{jsonize(cells["Season"].value + " " + cells["Year"].value).replace('"', '')}}</note>
+  <identifier type="IID">FSU_Digital_Cosa_{{jsonize(cells["No."].value).replace('"', '')}}</identifier>
+  <identifier type="No.">{{jsonize(cells["No."].value).replace('"', '')}}</identifier>
+  <relatedItem type="host">
+    <titleInfo>
+      <title>SU {{jsonize(cells["SU"].value).replace('"', '')}}</title>
+    </titleInfo>
+    <location>
+      <url displayLabel="Link to SU Sheet">http://purl.flvc.org/fsu/fd/FSU_Digital_Cosa_{{jsonize(cells["Year"].value).replace('"', '')}}_SU_{{jsonize(cells["SU"].value).replace('"', '')}}</url>
+    </location>
+    <note displayLabel="Locus/SU">{{jsonize(cells["Locus"].value + "/" + cells["SU"].value).replace('"', '')}}</note>
+  </relatedItem>
+  <physicalDescription>
+    <form type="material">{{jsonize(cells["Material"].value).replace('"', '')}}</form>
+    <extent>{{jsonize(cells["Dimensions"].value).replace('"', '')}}</extent>
+    <digitalOrigin>reformatted digital</digitalOrigin>
+  </physicalDescription>
+  <note displayLabel="Condition">{{jsonize(cells["Condition"].value).replace('"', '')}}</note>
+  <abstract displayLabel="Description">{{jsonize(cells["Description"].value).replace('"', '')}}</abstract>
+  <typeOfResource>three dimensional object</typeOfResource>
+  <genre authority="aat" valueURI="http://vocab.getty.edu/page/aat/300265421">cultural artifacts</genre>
+  <subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects" valueURI="http://id.loc.gov/authorities/subjects/sh99013339"><topic>Baths, Roman</topic></subject>
+  <language>
+    <languageTerm type="text">Latin</languageTerm> <!-- only use if there is an inscription on the artifact -->
+  </language>
+  <extension>
+    <flvc:flvc>
+      <flvc:owningInstitution>FSU</flvc:owningInstitution>
+      <flvc:submittingInstitution>FSU</flvc:submittingInstitution>
+    </flvc:flvc>
+  </extension>
+  <location>
+    <physicalLocation>Museo Archeologico Nazionale e Antica Citta di Cosa, Italy.</physicalLocation>
+    <physicalLocation displayLabel="Cassetta">{{jsonize(cells["Cassetta"].value).replace('"', '')}}</physicalLocation>
+  </location>
+  <recordInfo>
+    <recordCreationDate encoding="w3cdtf">2019-10-04</recordCreationDate>
+    <descriptionStandard>rda</descriptionStandard>
+  </recordInfo>
+</mods>
