@@ -1,4 +1,4 @@
-# digital_cosa_mods
+# digital_cosa
 Transformation format for openrefine to XML mods
 
 
