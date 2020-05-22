@@ -1,12 +1,14 @@
 
 <!-- Prefix -->
-<!-- include new line at the bottom of each section -->
 
-<?xml version="1.0"?>
-<mods xmlns="http://www.loc.gov/mods/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:etd="http://www.ndltd.org/standards/metadata/etdms/1.0/" xmlns:flvc="info:flvc/manifest/v1" xsi:schemaLocation="http://www.loc.gov/standards/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-4.xsd" version="3.4">
+<!-- Empty -->
+
 
 <!-- Row Template -->
 
+-----
+<?xml version="1.0"?>
+<mods xmlns="http://www.loc.gov/mods/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:etd="http://www.ndltd.org/standards/metadata/etdms/1.0/" xmlns:flvc="info:flvc/manifest/v1" xsi:schemaLocation="http://www.loc.gov/standards/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-4.xsd" version="3.4">
   <titleInfo lang="eng">
     <title>{{jsonize(cells["Object"].value).replace('"', '')}}</title>
   </titleInfo>
@@ -64,7 +66,16 @@
     <recordCreationDate encoding="w3cdtf">2019-10-04</recordCreationDate> <!-- change to the date of record creation -->
     <descriptionStandard>rda</descriptionStandard>
   </recordInfo>
+  </mods>
+-----
+
+
+<!-- Row Separator -->
+
+<!-- Empty -->
 
 <!-- Suffix -->
+
+<!-- Empty -->
   
-</mods>
+
