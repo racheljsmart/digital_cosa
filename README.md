@@ -25,8 +25,7 @@ Remove quotes from Templating
 -add .replace('"', '') to the value inputs in the XML
 ex, {{jsonize(cells["SU Number"].value).replace('"', '')}}
 
-Fixing Date
-Openrefine will change the date format when a project is opened, and this new format is unwanted. This is h
+Fixing Date  Openrefine will change the date format when a project is opened, and this new format is unwanted. This is h
 1. Transform *use the correct year
 Expression: slice(value, 4, 10)+" 2014"*
 2. Transform
