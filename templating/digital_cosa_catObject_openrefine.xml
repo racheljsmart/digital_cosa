@@ -27,7 +27,7 @@
     <dateIssued>Roman Republic, 200 BCE</dateIssued>
     <dateOther>{{jsonize(cells["Date"].value).replace('"', '')}}</dateOther>
   </originInfo>
-  <note displayLabel="Dig season">{{jsonize(cells["Season"].value + " " + cells["Year"].value).replace('"', '')}}</note>
+  <note displayLabel="Dig season">{{jsonize(cells["Season"].value.replace('"', '')}}</note>
   <identifier type="IID">FSU_Digital_Cosa_{{jsonize(cells["Number"].value).replace('"', '')}}</identifier>
   <identifier type="Catalog No.">{{jsonize(cells["Number"].value).replace('"', '')}}</identifier>
   <identifier type="Special Object">{{jsonize(cells["Sp. Obj."].value).replace('"', '')}}</identifier>
