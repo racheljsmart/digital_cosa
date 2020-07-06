@@ -32,16 +32,38 @@ Expression: slice(value, 4, 10)+" 2014"*
 2. Transform
 Expression: value.toDate().toString('yyyy-MM-dd')
 
-### Artifacts
+###Catalogued Objects (CO)###
 
-Merge 'Dimensions L x W x D' columns
-1. 'Dimensions...' -> Edit cells -> Transform...
-Expression: cells['Dimensions L x W x D'].value + " x " + cells['Column'].value + " x " + cells['Column2'].value + " (L x W x D)"
-2. OK
-3. Remove 'Column' and 'Column2'
-4. Rename 'Dimensions'
+DO NOT store blank rows
+DO NOT store blank cells as null
 
-Split 'Locus/SU' into two columns
+Be sure that the spellings of the columns are the same as in the CO template.
+
+DELETE Columns
+- 'Cat. Sheet'
+- 'Date Found'
+- 'Date Catalogued'
+- 'Photo Num.'
+- 'Photos'
+- 'Drawings'
+- 'Bibliography'
+- 'Comments'
+- 'Date Issued'
+1. Edit column -> Remove this column
+
+Rename 'Brief Identification' to 'Object'
+1. 'Brief Identification' -> Edit Column -> Rename this column
+2. In the popup window type 'Object'
+
+Rename 'Sp.Obj.' to 'Special'
+1. 'Sp.Obj.' -> Edit Column -> Rename this column
+2. In the popup window type 'Special'
+
+Rename 'Detailed Description' to 'Description'
+1. 'Detailed Description' -> Edit column -> Rename this column
+2. In the popup window type 'Description'
+
+Split 'Locus/SU' into two columns if not already
 1. 'Locus/SU' -> Split into several columns
 2. by separator '.'
 3. Deselect 'Remove this column' to be safe
@@ -49,15 +71,8 @@ Split 'Locus/SU' into two columns
 4. Rename first column 'Locus'; Rename second column 'SU'
 5. Remove original column
 
-Add 'Season' and 'Year' columns
-1. Select any column -> add column based on this column
-Name: Season
-Expression: "Summer"
-2. Select any column -> add column based on this column
-Name: Year
-Expression: "2014" or whatever the year is
-
 Remember to change the <recordCreationDate> value in the template to today's date.
+
 
 ### SU Sheets
 
