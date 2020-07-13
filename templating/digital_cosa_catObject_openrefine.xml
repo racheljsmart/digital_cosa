@@ -45,9 +45,9 @@
     <form type="material">{{jsonize(cells["Material"].value).replace('"', '')}}</form>
     <form type="material type">{{jsonize(cells["Type"].value).replace('"', '')}}</form>
     <form type="form/ware">{{jsonize(cells["Form/Ware"].value).replace('"', '')}}</form>
+    <form type="fabric/class">{{jsonize(cells["Fabric/Class"].value).replace('"', '')}}</note>
     <extent>{{jsonize(cells["Dimensions"].value).replace('"', '')}}</extent>
     <extent>{{jsonize(cells["Weight"].value).replace('"', '')}}</extent>
-    <note displayLabel="Fabric/Class">{{jsonize(cells["Fabric/Class"].value).replace('"', '')}}</note>
     <digitalOrigin>reformatted digital</digitalOrigin>
   </physicalDescription>
   <abstract displayLabel="Preliminary Description">{{jsonize(cells["Description"].value).replace('"', '')}}</abstract>
